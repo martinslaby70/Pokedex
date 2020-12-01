@@ -1,0 +1,56 @@
+.cloud{
+    position: absolute;
+    z-index: -1;
+    opacity: .5;
+    
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    &.big{
+        width: 115px;
+        height: auto;
+    }
+    &.medium{
+        width: 80px;
+        height: auto;
+    }
+
+
+    &.c1{
+        top: 279px;
+        left: 198px;
+    }
+    &.c2{
+        top: 283px;
+        right: 121px;
+    }
+    &.c3{
+        top: 180px;
+        right: 370px;
+    }
+    &.c4{
+        top: 336px;
+        left: 61px;
+    }
+    &.c5{
+        top: 1131px;
+        left: 80px;
+    }
+   
+
+    
+}
+
+@media only screen and (max-width: 1400px) {
+    .cloud{
+        opacity: .2;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .cloud{
+        display: none;
+    }
+}

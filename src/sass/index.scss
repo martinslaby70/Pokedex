@@ -1,0 +1,21 @@
+@import './assets/colors.scss';
+@import "~bootstrap/scss/bootstrap";
+
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(#24B4FF, .2) !important;
+  min-height: 100vh;
+  position: relative;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+

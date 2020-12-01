@@ -1,0 +1,73 @@
+@import './assets/colors.scss';
+
+.searchbar{
+    width: 812px;
+    height: 80px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 8px;
+
+    input,button{
+        margin: 0; 
+        font-size: 20px; 
+        border: 0;
+        outline: 0;
+        height: 80px;
+        background-color: $text-color;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    input{  
+        width: 80%;
+        font: normal normal 300 20px/24px 'Ubuntu';
+        color: $input-color;
+        
+        &::placeholder{
+            color: rgba( $input-color, .8);
+        }
+    }
+    button{
+        
+        padding: 0;
+        width: 10%;
+        color: $input-color;
+        svg{
+            min-width: 25%;
+            min-height: 25%;
+        }
+        &:disabled{
+            color: rgba( $input-color, .5);
+        }
+        &:last-child{
+            cursor: pointer;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 990px) {
+    .searchbar{
+        width: 80%;
+
+        button{
+            width: 25%;
+        }
+        input{
+            width: 50%;
+        }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .searchbar{
+        button{
+            display: none;
+        }
+        input{
+            width: 100%;
+            border-radius: 8px;
+            padding-left: 30px;
+            font-size: 15px;
+        }
+    }
+}

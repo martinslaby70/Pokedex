@@ -1,0 +1,69 @@
+@import './assets/colors.scss';
+
+header{
+    width: 100%;
+    height: 164px;
+    background-color: $background-red;
+    margin-bottom: 150px;
+    .navContainer{
+        width: 80%;
+        margin: 0 auto;
+        height: 100%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        ul{
+            padding: 0;
+            margin: 0;
+
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+        
+            li{
+                color: $text-color;
+                padding: 30px;
+                cursor: pointer;
+                font-family: 'Ubuntu', sans-serif;
+                font-weight: bold;
+                letter-spacing: 2px;
+
+                &.active{
+                    div{
+                        background-color: $text-color;
+                    }
+                }
+    
+                div{
+                    height: 2px;
+                    width: 50%;
+                    margin: 0 auto;
+                    background-color: transparent;
+                }
+                p{
+                    margin: 15px 0 0 0;
+                }
+            }
+    
+        }
+        .logo{
+            background-color: rgba(128, 0, 0, 0.5);
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    header{
+        height: 100px;
+        .navContainer>ul>li{
+            padding: 10px;
+            p{
+                font-size: 10px;
+            }
+        }
+    }
+}
