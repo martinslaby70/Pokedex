@@ -8,6 +8,7 @@ import DisplayPokemons from './displayPokemons'
 import './../../sass/pokemonContainer.scss'
 
 
+
 const pokemonsPerPage = 12;
 
 interface props {
@@ -31,9 +32,9 @@ const PokemonContainer = ({searchString, setSearchString, openModal}:props) => {
         .then((res) => {
             setPokemons(res.data.pokemon_species);
             setPokemonSearch(res.data.pokemon_species);
-            //console.log(res.data);
+            console.log(res.data);
         })
-    },[])
+    }, [])
 
     useEffect(() => {
         if (searchString === '')
@@ -48,8 +49,10 @@ const PokemonContainer = ({searchString, setSearchString, openModal}:props) => {
             })
             
             setPokemonSearch(pokemonsTemp);
+           
+            
         }
-    },[searchString])
+    },[searchString, pokemons])
 
     
 
