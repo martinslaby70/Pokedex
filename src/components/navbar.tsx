@@ -3,6 +3,9 @@ import React from 'react'
 //scss
 import './../sass/navbar.scss';
 
+//logo
+import logo from './../assets/background_Images/logo.webp';
+
 const Navbar = () => {
 
 
@@ -10,7 +13,7 @@ const Navbar = () => {
         <header>
             <div className="navContainer">
                 <div className="logo">
-                    <img src="" alt="pokedex_logo"/>
+                    <img src={logo} alt="pokedex_logo"/>
                 </div>
                 <ul>
                     <li>

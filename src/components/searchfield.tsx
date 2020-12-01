@@ -14,14 +14,7 @@ const Searchfield = ({setSearchString}:props) => {
 
     const inputRef = useRef<HTMLInputElement |null>(null);
     
-    const isDisabled = () => {
-        let res = false;
-        
-        if (inputRef.current)
-            res = inputRef.current.value.length >= 1;
-        
-        return res
-    }
+    
 
     const handleClear = () => {
         if (inputRef.current)
@@ -38,7 +31,7 @@ const Searchfield = ({setSearchString}:props) => {
                 placeholder="Zadejte jméno pokémona"
                 ref={inputRef}
             />
-            <button disabled={isDisabled()} onClick={handleClear}><FontAwesomeIcon icon={faTimes}/></button>
+            <button onClick={handleClear}><FontAwesomeIcon icon={faTimes}/></button>
         </div>
     )
 }
