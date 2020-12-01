@@ -2,6 +2,7 @@
 
 ---
 Tento Projekt mi byl zadán HR jedné společnosti, proto některé odkazy nikam nevedou, nebo obecně nedávají smysl. 
+
 ---
 
 Tvým úkolem bude vyrobit pokedex neboli interaktivní encyklopedii pokemonů. Použij data z [https://pokeapi.co/](https://pokeapi.co/) a zajímá nás pouze první generace, tedy prvních 151 pokemonů. Na úvodní stránce pokedexu by měl být seznam všech pokemonů a uživatel by měl být schopný v nich vyhledávat pomocí textového inputu (pokud do inputu napíšu "char", měl bych videt charmandera, charmeleona a charizarda). Každý pokemon by měl mít ve výpisu jméno a obrázek (sprites.front_default).
