@@ -18,11 +18,11 @@ const Navbar = () => {
                 <ul>
                     <li>
                         <div />
-                        <p>O nás</p>
+                        <a href="https://martinslaby.cz/" target="_blank" rel="noreferrer">Portfolio</a>
                     </li>
                     <li className="active">
                         <div />
-                        <p>Pokémoni</p>
+                        <a href="#">Pokémoni</a>
                     </li>
                 </ul>
             </div>   

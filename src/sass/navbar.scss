@@ -32,21 +32,29 @@ header{
                 font-weight: bold;
                 letter-spacing: 2px;
 
-                &.active{
-                    div{
-                        background-color: $text-color;
-                    }
-                }
-    
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
                 div{
                     height: 2px;
                     width: 50%;
                     margin: 0 auto;
                     background-color: transparent;
                 }
-                p{
-                    margin: 15px 0 0 0;
+                a{
+                    margin-top: 10px;
+                    text-decoration: none;
+                    color: inherit;
                 }
+
+                &.active{
+                    div{
+                        background-color: $text-color;
+                    }
+                }
+    
+              
             }
     
         }
